@@ -16,7 +16,16 @@ int main() {
   }
  */
 
-  str=num==1 ? "O valor de num é 1!" : "Não é 1 :(";
+/*   str=num==1 ? "O valor de num é 1!" : "Não é 1 :("; */
+
+  switch(num) {
+    case 1:
+        str="O valor de num é 1!";
+        break;
+    default:
+        str="Não é 1 :(";
+        break;
+  }
   
   cout << str << endl;
 
