@@ -29,7 +29,8 @@ void imprimePorPreco(TAlbum* v, int nAlbuns, float p) {
 int main(){
   int i, anoAlbum;
   float descontoAssinante;
-
+  cout << "Digite o número de álbuns: ";
+  cin >> i;
   TAlbum*vet = new TAlbum[i];
   TAlbum*albumCorrente = new TAlbum;
   TAlbum*aux;
@@ -39,5 +40,15 @@ int main(){
   albumCorrente->ano = anoAlbum;
   aux = new TAlbum;
 
+  float precoBusca;
+  cout << "Digite o preço a ser buscado: ";
+  cin >> precoBusca;
+
+  imprimePorPreco(vet, i, precoBusca);
+
+  delete[] vet;
+  delete albumCorrente;
+  delete aux;
+  
   return 0;
 }
