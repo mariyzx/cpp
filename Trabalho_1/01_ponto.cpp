@@ -6,6 +6,8 @@
 
 using namespace std;
 
+void apresentacao(void);
+
 class Ponto {
   public:
     float x,y;
@@ -29,4 +31,15 @@ void Ponto::entradaDeDados(void) {
 
 void Ponto::impressaoDeDados(void) {
   cout<<"O valor de x é "<<x<<" e o valor de y é "<<y<<"!"<<endl;
+}
+
+void apresentacao(void){
+  cout<<endl<<endl;
+  cout<<"   **********************************"<<endl;
+  cout<<"     UFRRJ"<<endl;
+  cout<<"     IM - DTL"<<endl;
+  cout<<"     Bacharelado em Matematica Aplicada e Computacional"<<endl;
+  cout<<"     Mariana Werneck"<<endl;
+  cout<<"   **********************************"<<endl;
+  cout<<endl<<endl;
 }
