@@ -32,7 +32,7 @@ void teste(void){
   TProfessor prof2;
 }
 
-main(){
+int main(){
   TProfessor prof1;
 
   prof1.imprimeDados();
