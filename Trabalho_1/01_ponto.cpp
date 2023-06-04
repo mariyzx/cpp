@@ -17,6 +17,9 @@ class Ponto {
 
 int main() {
   Ponto ponto;
+
+  apresentacao();
+
   ponto.entradaDeDados();
   ponto.impressaoDeDados();
 }
