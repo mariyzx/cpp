@@ -81,7 +81,8 @@ void apresentacao(void){
   cout<<"     UFRRJ"<<endl;
   cout<<"     IM - DTL"<<endl;
   cout<<"     Bacharelado em Matematica Aplicada e Computacional"<<endl;
-  cout<<"     Mariana Werneck"<<endl;
+  cout<<"     Aluna: Mariana Werneck"<<endl;
+  cout<<"     Matrícula: 20200031381"<<endl;
   cout<<"   **********************************"<<endl;
   cout<<endl<<endl;
 }
