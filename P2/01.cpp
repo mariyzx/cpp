@@ -15,40 +15,40 @@ class TVetor {
   public:
     float x, y, z;
 
-    TVetor() {
-      x = y = z = 0;
-    }
+  TVetor() {
+    x = y = z = 0;
+  }
 
-    TVetor(float a, float b, float c) {
-      x = a;
-      y = b;
-      z = c;
-    }
+  TVetor(float a, float b, float c) {
+    x = a;
+    y = b;
+    z = c;
+  }
 
-    TVetor operator * (TVetor segundoVetor) {
-      int newX = y*segundoVetor.z - z*segundoVetor.y;
-      int newY = z*segundoVetor.x - x*segundoVetor.z;
-      int newZ = x*segundoVetor.y - y*segundoVetor.x;
+  TVetor operator * (TVetor segundoVetor) {
+    int newX = y*segundoVetor.z - z*segundoVetor.y;
+    int newY = z*segundoVetor.x - x*segundoVetor.z;
+    int newZ = x*segundoVetor.y - y*segundoVetor.x;
 
-      TVetor ret(newX, newY, newZ);
+    TVetor ret(newX, newY, newZ);
 
-      cout<<"O valor do produto vetorial entre: (" << x << ", " << y << ", " << z << ") e (" <<segundoVetor.x << ", " <<segundoVetor.y << ", " << segundoVetor.z << ") " << " é: (" << ret.x << ", " << ret.y << ", " << ret.z << ")." << endl;
-      return ret;
-    }
+    cout<<"O valor do produto vetorial entre: (" << x << ", " << y << ", " << z << ") e (" <<segundoVetor.x << ", " <<segundoVetor.y << ", " << segundoVetor.z << ") " << " é: (" << ret.x << ", " << ret.y << ", " << ret.z << ")." << endl;
+    return ret;
+  }
 
-    operator float() {
-      return sqrt(x * x + y * y + z * z);
-    }
+  operator float() {
+    return sqrt(x * x + y * y + z * z);
+  }
 
-    void entradaDeDados(void) {
-      cout<<"Insira as coordenadas do vetor"<<endl;
-      cout<<"x: ";
-      cin>>x;
-      cout<<"y: ";
-      cin>>y;
-      cout<<"z: ";
-      cin>>z;
-    }
+  void entradaDeDados(void) {
+    cout<<"Insira as coordenadas do vetor"<<endl;
+    cout<<"x: ";
+    cin>>x;
+    cout<<"y: ";
+    cin>>y;
+    cout<<"z: ";
+    cin>>z;
+  }
 };
 
 int main() {

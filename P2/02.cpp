@@ -36,11 +36,11 @@ class TFuncionario : public TPessoa {
       cout<<"*************INSIRA OS VALORES***************"<<endl;
       cout<<"Nome do funcionário: ";
       cin.getline(nome, 80);
-      cout<<"CPF: "<<cpf;
+      cout<<"CPF: ";
       cin.getline(cpf, 16);
-      cout<<"Setor: "<<setor;
+      cout<<"Setor: ";
       cin.getline(setor, 51);
-      cout<<"ID: "<<id;
+      cout<<"ID: ";
       cin.getline(id, 21);
     }
 
