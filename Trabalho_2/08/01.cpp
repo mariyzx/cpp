@@ -8,6 +8,8 @@
 
 using namespace std;
 
+void apresentacao(void);
+
 float randomFloat(float min, float max) {
     return min + (float)(rand()) / (float)(RAND_MAX / (max - min));
 }
@@ -20,6 +22,7 @@ class TAluno{
 };
 
 int main() {
+  apresentacao();
   int numAlunosDaTurma=10;
   ofstream arquivo;
   arquivo.open("turma.dat", ios::binary);
@@ -36,4 +39,16 @@ int main() {
         arquivo.write((char*)(alunos), sizeof(TAluno) * numAlunosDaTurma);
         arquivo.close();
     }
+}
+
+void apresentacao(void){
+  cout<<endl<<endl;
+  cout<<"   **********************************"<<endl;
+  cout<<"     UFRRJ"<<endl;
+  cout<<"     IM - DTL"<<endl;
+  cout<<"     Bacharelado em Matematica Aplicada e Computacional"<<endl;
+  cout<<"     Aluna: Mariana Werneck"<<endl;
+  cout<<"     Matrícula: 20200031381"<<endl;
+  cout<<"   **********************************"<<endl;
+  cout<<endl<<endl;
 }
